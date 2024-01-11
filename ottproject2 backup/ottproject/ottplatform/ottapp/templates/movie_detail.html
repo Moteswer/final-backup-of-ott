@@ -1,0 +1,109 @@
+<h1>HELLO DA SAJI</h1>
+
+
+<style>
+     body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.header {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 200px; /* Adjust the max-width as needed */
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #111;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #e50914;
+}
+
+.details-container {
+    font-style: oblique;
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.details-container img {
+    max-width: 300px; /* Adjust the max-width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.details-container p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #808080;
+}
+
+
+
+
+
+</style>
+
+<!-- movie_detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.name }} Details</title>
+    <!-- Add your styles or link to an external stylesheet if needed -->
+</head>
+<body>
+
+<div class="header">
+    <img src="netflix-logo.png" alt="Netflix Logo">
+</div>
+<div class="main-content">
+    <h1>{{ movie.name }}</h1>
+    <div class="details-container">
+        <img src="{{ movie.image.url }}" alt="{{ movie.name }}">
+        <p>SYNOPSIS:{{movie.desc}}</p> 
+        <p>Year: {{ movie.year }}</p>
+        <p>Rating: {{ movie.rating }}</p>
+        <!-- Add other movie details as needed -->
+    </div>
+    
+</div>
+
+
+<div >
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8FkLRUJj-o0?si=_9UbPDYZi39H0OEd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  gyroscope; picture-in-picture;" allowfullscreen></iframe>
+</div>
+
+    
+
+
+<footer>
+    <p>&copy; 2024 Netflix Clone</p>
+</footer>
+
+</body>
+</html>
